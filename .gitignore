@@ -1,0 +1,34 @@
+# Firmware images are large and vendor-copyrighted; keep them out of git.
+firmware/
+work/
+
+# Never commit vendor source drops or installers.
+alphatheta/
+*.UPD
+*.exe
+*.tar.gz
+
+# Raw firmware/partition images and extracted trees.
+*.img
+*.img.xz
+*.dtb
+*.fit
+*.squashfs
+*.extracted/
+
+# Build artifacts and packaged payloads.
+*.zip
+*.so
+
+# Local private keys / secrets.
+*.pem
+*.key
+id_*
+*_ed25519
+*_ed25519.pub
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
